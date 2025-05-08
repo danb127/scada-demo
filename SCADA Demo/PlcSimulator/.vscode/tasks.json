@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Simulator", // Label for the task
+            "type": "shell",    // Type of task (shell command)
+            "command": "cl",    // Command to run the C++ compiler (cl.exe)
+            "args": [
+                "/EHsc",    // Enable C++ exceptions
+                "main.cpp", // Source file to compile
+                "/link",    // link flags
+                "ws2_32.lib", // Link against ws2_32.lib for Winsock functions
+            ],
+            "group": {
+                "kind": "build",    // Group this task under the build category
+                "isDefault": true   // Set this task as the default build task
+            },
+            "problemMatcher": ["$msCompile"]    // Use the Microsoft C++ compiler problem matcher
+        }
+    ]
+}

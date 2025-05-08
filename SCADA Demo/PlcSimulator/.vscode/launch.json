@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations" :[
+        {
+            "name": "Run Simulator", // Name of the configuration
+            "type": "cppvsdbg", // Type of debugger (C++ for Visual Studio)
+            "request": "launch",    // Request type (launch the program)
+            "program": "${workspaceFolder}/main.exe", // Path to the compiled executable
+            "args": [],    // Command-line arguments to pass to the program
+            "cwd": "${workspaceFolder}", // Current working directory for the program
+            "console": "integratedTerminal", // Use the integrated terminal for input/output
+        }
+    ]
+}
